@@ -17,14 +17,14 @@ export default class Footer extends Stepan.Component {
 
     const filters = Stepan.createElement('ul', rootElement, { class: 'filters' });
 
-    const all = Stepan.createElement('li', filters)
-    Stepan.createElement('a', all, {href: "#/", class: "selected", innerText: 'All'})
+    const all = Stepan.createElement('li', filters);
+    Stepan.createElement('a', all, {href: "#/", class: "selected", innerText: 'All'});
 
-    const active = Stepan.createElement('li', filters)
+    const active = Stepan.createElement('li', filters);
     Stepan.createElement('a', active, {href: "#/active", class: "", innerText: 'Active'});
 
-    const completed = Stepan.createElement('li', filters)
-    Stepan.createElement('a', completed, {href: "#/completed", class: "", innerText: 'Completed'})
+    const completed = Stepan.createElement('li', filters);
+    Stepan.createElement('a', completed, {href: "#/completed", class: "", innerText: 'Completed'});
 
     return rootElement;
   }
